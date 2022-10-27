@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 55px;
+    background-color:#F55A5A;
+    position: sticky;
+    top: 0;   
+    z-index: 1;
+}
+nav>svg{
+   width: 28px;
+   height: 28px;
+}   
+nav>h1{
+ 
+    padding-left: 8px;
+}
+.boddy{
+    position:static;
+    
+
+}
+.card{
+    width: 964px;
+    height: 220px;
+    margin: 0;
+    
+    position: relative;
+}
+.image>img{
+    cursor: pointer;
+    border-radius: 5px;
+    width: 125px;
+    height: 168px;
+}
+.image{
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+.inside-card-part2{
+    
+    width: 340px;
+    height: 164px;
+    position:absolute;
+    left: 180px;
+    top: 42px;
+    
+}
+.first-detail{
+    display: flex;
+    position: absolute;  
+    
+}
+.location-icon{
+    margin-top: 2px;
+    margin-left: 4px;
+}
+.place{
+    margin-left: 4px;
+}
+.location-link{
+    font-family: 'Inter';
+    color:#918E9B ;
+    text-decoration: top 2px;
+    margin-left: 15px;
+}
+.main-place-name{
+    position: absolute;
+    top: 16%;
+    margin-left: 4px;   
+}
+.main-place-name>h1{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 25px;
+    color: #2B283A;
+}
+.date{
+    position: absolute;
+    top: 45%;  
+}
+.date>p{
+    font-family: 'Inter';
+    font-size: 10.7px;
+    margin-left: 4px; 
+    color: #2B283A;
+    font-weight:bold;
+    line-height: 12px;
+    font-weight: 900;
+    
+}
+.each-place-info{
+    position: absolute;
+    top: 60%;
+}
+.each-place-info>p{
+    margin-left: 4px; 
+    font-family: 'Inter';
+    font-size: 10.7px;
+}
+
+
+
+
