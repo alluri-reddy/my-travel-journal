@@ -1,5 +1,15 @@
 import React from "react"
 export default function Card(props){
+
+    
+    
+    const [heartnum,setheartnum]=React.useState(0)
+    const [heartbool,setheartbool]=React.useState(true)
+    function heartclick(){
+        setheartbool(prev=> !prev)
+        heartbool?setheartnum(prev=> prev + 1):setheartnum(prev=> prev - 1)
+    }
+
     return(
         <div class="card">
             <div className="image">
@@ -17,6 +27,23 @@ export default function Card(props){
                     <div className="date"><p>{props.item.dateofupload}</p></div>
                     <div className="each-place-info"><p>{props.item.discription}</p></div>
                 
+                     {/* <svg className="heart" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.0631 2.38809C17.0198 0.530554 13.8575 0.681137 12 2.72442L10.6997 4.15476L9.3994 2.72442C7.54187 0.681137 4.37962 0.530554 2.33634 2.38809C0.293048 4.24562 1.1997 8.08778 2 9.45115C2.8003 10.8145 7.05401 16.2265 10.6997 19.0208M19.0631 2.38809C20.6997 4.15475 20.1203 7.76045 19.0631 9.45115M19.0631 2.38809C20.6997 4.15475 19.9386 7.65959 19.0631 9.45115M19.0631 9.45115C16.1439 14.1193 14.3687 15.8123 10.6997 19.0208M19.0631 9.45115C18.1997 11.2178 14.6997 16.0271 10.6997 19.0208" stroke="#D21818"/>
+                    </svg>
+                    <svg className="heart-full" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.63663 1.8003C3.67992 -0.0572301 6.84216 0.0933527 8.6997 2.13664L10 3.56697L11.3003 2.13664C13.1578 0.0933527 16.3201 -0.0572301 18.3634 1.8003C20.4067 3.65784 20.5572 6.82008 18.6997 8.86337C15.8485 13.0522 13.8415 15.1112 10 18.818C6.33215 15.4842 4.3543 13.4978 1.3003 9.24831C-0.557238 7.20502 -0.406655 3.65784 1.63663 1.8003Z" fill="#E31C1C"/>
+                    </svg>  */}
+                    <div className="heartsymbol-div" onClick={heartclick}>
+                        {heartbool?<svg className="heart" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.0631 2.38809C17.0198 0.530554 13.8575 0.681137 12 2.72442L10.6997 4.15476L9.3994 2.72442C7.54187 0.681137 4.37962 0.530554 2.33634 2.38809C0.293048 4.24562 1.1997 8.08778 2 9.45115C2.8003 10.8145 7.05401 16.2265 10.6997 19.0208M19.0631 2.38809C20.6997 4.15475 20.1203 7.76045 19.0631 9.45115M19.0631 2.38809C20.6997 4.15475 19.9386 7.65959 19.0631 9.45115M19.0631 9.45115C16.1439 14.1193 14.3687 15.8123 10.6997 19.0208M19.0631 9.45115C18.1997 11.2178 14.6997 16.0271 10.6997 19.0208" stroke="#D21818"/>
+                        </svg>: <svg className="heart-full" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.63663 1.8003C3.67992 -0.0572301 6.84216 0.0933527 8.6997 2.13664L10 3.56697L11.3003 2.13664C13.1578 0.0933527 16.3201 -0.0572301 18.3634 1.8003C20.4067 3.65784 20.5572 6.82008 18.6997 8.86337C15.8485 13.0522 13.8415 15.1112 10 18.818C6.33215 15.4842 4.3543 13.4978 1.3003 9.24831C-0.557238 7.20502 -0.406655 3.65784 1.63663 1.8003Z" fill="#E31C1C"/>
+                        </svg>}
+                    </div>
+                    
+
+                    <h3 className="likes_numbers">{heartnum}</h3>
+
 
             </div>   
         </div>

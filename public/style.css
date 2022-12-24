@@ -21,17 +21,48 @@ nav>h1{
  
     padding-left: 8px;
 }
-.boddy{
-    position:static;
-    
 
-}
+.boddy{
+
+    position:static;
+    /* display: flex;
+    flex-wrap: nowrap;
+    gap: 400px;
+    overflow-x: auto; */
+
+} 
+
 .card{
     width: 964px;
     height: 220px;
     margin: 0;
-    
     position: relative;
+    
+}
+.heartsymbol-div{
+    cursor: pointer;
+}
+.heart{
+    height: 15px;
+    width: 16px;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+}
+.heart-full{
+    
+    height: 15px;
+    width: 16px;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+}
+.likes_numbers{
+    font-size: 18px;
+    position: absolute;
+    top: 89%;
+    left: 86%;
+    
 }
 .image>img{
     cursor: pointer;
