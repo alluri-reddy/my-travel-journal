@@ -1,10 +1,12 @@
+
+
 *{
     margin: 0;
     
 }
 .nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: #ffffff;
     height: 55px;
@@ -13,11 +15,42 @@
     top: 0;   
     z-index: 1;
 }
-nav>svg{
+.main{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+}
+.search{
+   margin-left:auto;
+   margin-right:50px;
+}
+.search>input{
+    position:relative;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.search-logo{
+    cursor:pointer;
+    position:absolute;
+    bottom:17px;
+    right:56px;
+    width:20px;
+    height:20px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin-left:auto;
+    
+
+}
+.title-logo{
    width: 28px;
    height: 28px;
 }   
-nav>h1{
+.title>h1{
  
     padding-left: 8px;
 }
@@ -31,9 +64,19 @@ nav>h1{
     overflow-x: auto; */
 
 } 
+.side_view{
+  position: fixed;
+  top: 84px; 
+  right:20px;
+  width: 61vw;
+  height: 600px; 
+  background-color: #f0f0f0; 
+  
+    
+}
 
 .card{
-    width: 964px;
+    width: 500px;
     height: 220px;
     margin: 0;
     position: relative;
@@ -46,7 +89,7 @@ nav>h1{
     height: 15px;
     width: 16px;
     position: absolute;
-    top: 90%;
+    top: 93%;
     left: 80%;
 }
 .heart-full{
@@ -54,13 +97,13 @@ nav>h1{
     height: 15px;
     width: 16px;
     position: absolute;
-    top: 90%;
+    top: 93%;
     left: 80%;
 }
 .likes_numbers{
     font-size: 18px;
     position: absolute;
-    top: 89%;
+    top: 92%;
     left: 86%;
     
 }
@@ -71,9 +114,10 @@ nav>h1{
     height: 168px;
 }
 .image{
-    position: relative;
+    position: absolute;
     top: 30px;
     left: 40px;
+   
 }
 .inside-card-part2{
     
@@ -81,7 +125,7 @@ nav>h1{
     height: 164px;
     position:absolute;
     left: 180px;
-    top: 42px;
+    top: 40px;
     
 }
 .first-detail{
